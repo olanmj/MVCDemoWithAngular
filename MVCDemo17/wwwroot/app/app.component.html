@@ -1,0 +1,20 @@
+<h1>Hello {{name}} app!</h1>
+  <hr>
+<li [routerLinkActive]="['link-active']">
+    <a [routerLink]="['/hello']">
+        <span class='glyphicon glyphicon-user'></span> Hello
+    </a>
+</li>
+<li [routerLinkActive]="['link-active']">
+    <a [routerLink]="['/products/1']">
+        <span class='glyphicon glyphicon-user'></span> Product 1
+    </a>
+</li>
+<li [routerLinkActive]="['link-active']">
+    <a [routerLink]="['/products']">
+        <span class='glyphicon glyphicon-user'></span> All Products
+    </a>
+</li>
+<!--<helloworld></helloworld>-->
+<router-outlet></router-outlet>
+

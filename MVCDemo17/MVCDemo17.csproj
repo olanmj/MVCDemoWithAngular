@@ -1,0 +1,60 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp1.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <PackageTargetFallback>$(PackageTargetFallback);portable-net45+win8+wp8+wpa81;</PackageTargetFallback>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="wwwroot\node_modules\bin\**" />
+    <Content Remove="wwwroot\node_modules\bin\**" />
+    <EmbeddedResource Remove="wwwroot\node_modules\bin\**" />
+    <None Remove="wwwroot\node_modules\bin\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="wwwroot\app\helloworld.component.js" />
+    <Content Include="wwwroot\app\helloworld.component.js.map" />
+    <Content Include="wwwroot\app\helloworld.component.ts" />
+    <Content Include="wwwroot\app\helloworld.component.html" />
+    <Content Include="wwwroot\app\products\addproduct.component.html" />
+    <Content Include="wwwroot\app\products\product.compoent.html" />
+    <Content Include="wwwroot\app\products\product.component.html" />
+    <Content Include="wwwroot\app\products\product.component.js" />
+    <Content Include="wwwroot\app\products\product.component.js.map" />
+    <Content Include="wwwroot\app\products\product.component.ts" />
+    <Content Include="wwwroot\app\products\productlist.component.html" />
+    <Content Include="wwwroot\app\products\productlist.component.ts" />
+    <Content Include="wwwroot\app\weather\weather.component" />
+    <Content Include="wwwroot\app\weather\weather.component.html" />
+    <Content Include="wwwroot\app\weather\weather.component.ts" />
+    <Content Include="wwwroot\node_modules\rxjs\helloworld.component.html" />
+    <Content Include="wwwroot\node_modules\rxjs\helloworld.component.js" />
+    <Content Include="wwwroot\node_modules\rxjs\helloworld.component.js.map" />
+    <Content Include="wwwroot\node_modules\rxjs\helloworld.component.ts" />
+    <Content Include="wwwroot\tsconfig.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore" Version="1.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="1.1.2" />
+    <PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="1.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="1.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="1.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer.Design" Version="1.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="1.1.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="1.1.1" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.BrowserLink" Version="1.1.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="1.1.0-msbuild3-final" />
+  </ItemGroup>
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="1.0.0-msbuild3-final" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="wwwroot\app\products\addproduct.component.ts" />
+  </ItemGroup>
+
+</Project>
