@@ -13,8 +13,8 @@ export class AddProductComponent {
 
     onSubmit(form: NgForm, http: Http) {
         console.log('Submitted ' + this.model.name + "::" + this.model.description + "::" + this.model.price);
-        var body = `name=${this.model.name}&description=${this.model.description}&price=${this.model.price}&category=${this.model.category}`;
-        http.post('/api/products', JSON.stringify(body), { headers: this.headers });
+        let body = `name=${this.model.name}&description=${this.model.description}&price=${this.model.price}&category=${this.model.category}`;
+        http.post('/api/products', { body }, { headers: this.headers });
     }
 }
 

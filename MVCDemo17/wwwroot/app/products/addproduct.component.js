@@ -15,7 +15,7 @@ var AddProductComponent = (function () {
     AddProductComponent.prototype.onSubmit = function (form, http) {
         console.log('Submitted ' + this.model.name + "::" + this.model.description + "::" + this.model.price);
         var body = "name=" + this.model.name + "&description=" + this.model.description + "&price=" + this.model.price + "&category=" + this.model.category;
-        http.post('/api/products', JSON.stringify(body), { headers: this.headers });
+        http.post('/api/products', { body: body }, { headers: this.headers });
     };
     return AddProductComponent;
 }());
