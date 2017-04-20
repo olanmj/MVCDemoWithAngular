@@ -1,9 +1,12 @@
-﻿@{
+﻿@model MVCDemo17.Models.Product
+
+@{
     ViewData["Title"] = "Contact";
 }
 <h2>@ViewData["Title"].</h2>
 <h3>@ViewData["Message"]</h3>
 
+<h3>Item 1 is: @Model.Name</h3>
 <address>
     One Microsoft Way<br />
     Redmond, WA 98052-6399<br />

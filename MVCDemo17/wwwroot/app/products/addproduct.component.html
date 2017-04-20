@@ -18,24 +18,25 @@
                            [(ngModel)]="model.description" name="description"></textarea>
             </div>
         </div>
+        <div class="form-group">
             <label class="control-label col-md-2" for="price">Price</label>
             <div class="col-md-10">
                 <input type="number" id="price" class="form-control"
-                       [(ngModel)]="model.price" name="price"/>               
+                       [(ngModel)]="model.price" name="price" />
             </div>
         </div>
         <div class="form-group">
             <label class="control-label col-md-2" for="category">Category</label>
             <div class="col-md-10">
                 <input type="text" id="category" class="form-control" 
-                       (ngModel)="model.category"/>
-                
-            </div>
-            <div class="form-group">
-                <div class="col-md-offset-2 col-md-10">
-                    <button type="submit" class="btn btn-default" >Save</button>
-                </div>
-            </div>
+                       [ngModel]="model.category"/>   
+            </div>          
+        </div>
+      <div class="form-group">
+         <div class="col-md-offset-2 col-md-10">
+            <button type="submit" class="btn btn-default">Save</button>
+         </div>
+     </div>
         </div>
 </form>
 

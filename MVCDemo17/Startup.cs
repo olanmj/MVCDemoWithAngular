@@ -12,6 +12,7 @@ using MVCDemo17.Models;
 using MVCDemo17.Controllers.WebAPI;
 using Microsoft.AspNetCore.Http;
 
+
 namespace MVCDemo17
 {
     public class Startup
@@ -46,27 +47,27 @@ namespace MVCDemo17
             loggerFactory.AddConsole(Configuration.GetSection("Logging"));
             loggerFactory.AddDebug();
 
-            if (env.IsDevelopment())
-            {
+            //if (env.IsDevelopment())
+            //{
                 app.UseDeveloperExceptionPage();
                 //app.UseBrowserLink();
-            }
-            else
-            {
-                app.UseExceptionHandler("/Home/Error");
-            }
+            //}
+            //else
+            //{
+            //    app.UseExceptionHandler("/Home/Error");
+            //}
 
             // to serve index.html as the default page
             app.UseDefaultFiles();
             app.UseStaticFiles();
 
-            app.UseMvc();
-            //routes =>
-            //{
-            //    routes.MapRoute(
-            //        name: "default",
-            //        template: "{controller=Home}/{action=Index}/{id?}");
-            //});
+            app.UseMvc(
+            routes =>
+            {
+                routes.MapRoute(
+                    name: "default",
+                    template: "{controller=Home}/{action=Index}/{id?}");
+            });
 
             app.Run(async context =>
             {

@@ -14,7 +14,7 @@ namespace MVCDemo17.Controllers
             [HttpGet("[action]/{city}")]
             public IActionResult City(string city)
             {
-                return Ok(new { Temp = "85", Summary = "Freakin hot!", City = city });
+                return Ok(new { Temp = "65", Summary = "Nice!", City = city });
             }
     }
 }

@@ -16,10 +16,23 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="Properties\PublishProfiles\MVCDemo17 - Web Deploy.pubxml" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Content Include="wwwroot\app\helloworld.component.js" />
     <Content Include="wwwroot\app\helloworld.component.js.map" />
     <Content Include="wwwroot\app\helloworld.component.ts" />
     <Content Include="wwwroot\app\helloworld.component.html" />
+    <Content Include="wwwroot\app\home\home.component.html" />
+    <Content Include="wwwroot\app\home\home.component.js" />
+    <Content Include="wwwroot\app\home\home.component.js.map" />
+    <Content Include="wwwroot\app\home\home.component.ts" />
+    <Content Include="wwwroot\app\navmenu\navmenu.component.css" />
+    <Content Include="wwwroot\app\navmenu\navmenu.component.html" />
+    <Content Include="wwwroot\app\navmenu\navmenu.component.js" />
+    <Content Include="wwwroot\app\navmenu\navmenu.component.js.map" />
+    <Content Include="wwwroot\app\navmenu\navmenu.component.ts" />
     <Content Include="wwwroot\app\products\addproduct.component.html" />
     <Content Include="wwwroot\app\products\product.compoent.html" />
     <Content Include="wwwroot\app\products\product.component.html" />
@@ -31,6 +44,10 @@
     <Content Include="wwwroot\app\weather\weather.component" />
     <Content Include="wwwroot\app\weather\weather.component.html" />
     <Content Include="wwwroot\app\weather\weather.component.ts" />
+    <Content Include="wwwroot\home\home.component.html" />
+    <Content Include="wwwroot\home\home.component.js" />
+    <Content Include="wwwroot\home\home.component.js.map" />
+    <Content Include="wwwroot\home\home.component.ts" />
     <Content Include="wwwroot\node_modules\rxjs\helloworld.component.html" />
     <Content Include="wwwroot\node_modules\rxjs\helloworld.component.js" />
     <Content Include="wwwroot\node_modules\rxjs\helloworld.component.js.map" />
@@ -55,6 +72,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="wwwroot\app\products\addproduct.component.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\PublishProfiles\" />
   </ItemGroup>
 
 </Project>

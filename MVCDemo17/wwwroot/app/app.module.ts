@@ -5,7 +5,8 @@ import { HttpModule, JsonpModule } from '@angular/http';
 import {FormsModule} from '@angular/forms';
 
 import { AppComponent }  from './app.component';
-
+import { NavMenuComponent } from './navmenu/navmenu.component';
+import { HomeComponent } from './home/home.component';
 import { HelloWorldComponent } from './helloworld.component';
 import { ProductComponent } from './products/product.component';
 import { ProductListComponent } from './products/productlist.component';
@@ -15,7 +16,7 @@ import { WeatherComponent } from './weather/weather.component';
 @NgModule({
     imports: [BrowserModule, HttpModule, JsonpModule, FormsModule, RouterModule.forRoot([
         { path: '', redirectTo: 'home', pathMatch: 'full' },
-        { path: 'home', component: AppComponent },
+        { path: 'home', component: HomeComponent },
         { path: 'hello', component: HelloWorldComponent },
         { path: 'weather', component: WeatherComponent },
         { path: 'products/:id', component: ProductComponent },
@@ -24,7 +25,7 @@ import { WeatherComponent } from './weather/weather.component';
 
     ])],
 
-    declarations: [AppComponent, HelloWorldComponent, WeatherComponent,
+    declarations: [AppComponent, HomeComponent, NavMenuComponent, HelloWorldComponent, WeatherComponent,
                     ProductComponent, ProductListComponent, AddProductComponent], 
   bootstrap:    [ AppComponent ]
 })
