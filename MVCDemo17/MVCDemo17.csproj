@@ -34,7 +34,6 @@
     <Content Include="wwwroot\app\navmenu\navmenu.component.js.map" />
     <Content Include="wwwroot\app\navmenu\navmenu.component.ts" />
     <Content Include="wwwroot\app\products\addproduct.component.html" />
-    <Content Include="wwwroot\app\products\product.compoent.html" />
     <Content Include="wwwroot\app\products\product.component.html" />
     <Content Include="wwwroot\app\products\product.component.js" />
     <Content Include="wwwroot\app\products\product.component.js.map" />
