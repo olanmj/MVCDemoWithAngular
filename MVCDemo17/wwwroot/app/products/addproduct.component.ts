@@ -8,23 +8,26 @@ import { Http, Headers } from '@angular/http';
 })
 
 export class AddProductComponent {
-    private headers = new Headers({ 'Content-Type': 'application/json' });
+    
     model: Product = new Product();
+    postResponse: Object;
 
-    onSubmit(form: NgForm, http: Http) {
-        console.log('Submitted ' + this.model.name + "::" + this.model.description + "::" + this.model.price);
-        let body = `name=${this.model.name}&description=${this.model.description}&price=${this.model.price}&category=${this.model.category}`;
-        http.post('/api/products', { body }, { headers: this.headers });
+    constructor(private http: Http) { }
+
+    onSubmit(form: NgForm) {
+        let headers = new Headers();
+        headers.append('Content-Type', 'application/json');
+        this.http.post('/api/products', JSON.stringify(this.model), { headers: headers }).subscribe(res => this.postResponse = res.json());
     }
 }
 
 class Product {
-    constructor(private productID: number = null,
+    constructor(private productID: number = 0,
         public name: string = null,
         public description: string = null,
         public price: number = null,
         public category: string = null,
-        public quantity: number = null,
-        private amountDue: number = null
+        public quantity: number = 0,
+        private amountDue: number = 0
     ) { }
 }
