@@ -85,7 +85,7 @@ namespace MVCDemo17.Controllers.WebAPI
         [HttpPost]
         public async Task<IActionResult> PostProduct([FromBody] Product product)
         {
-            if (!ModelState.IsValid)
+if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }

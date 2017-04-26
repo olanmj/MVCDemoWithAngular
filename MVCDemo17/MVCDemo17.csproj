@@ -43,10 +43,6 @@
     <Content Include="wwwroot\app\weather\weather.component" />
     <Content Include="wwwroot\app\weather\weather.component.html" />
     <Content Include="wwwroot\app\weather\weather.component.ts" />
-    <Content Include="wwwroot\home\home.component.html" />
-    <Content Include="wwwroot\home\home.component.js" />
-    <Content Include="wwwroot\home\home.component.js.map" />
-    <Content Include="wwwroot\home\home.component.ts" />
     <Content Include="wwwroot\node_modules\rxjs\helloworld.component.html" />
     <Content Include="wwwroot\node_modules\rxjs\helloworld.component.js" />
     <Content Include="wwwroot\node_modules\rxjs\helloworld.component.js.map" />
